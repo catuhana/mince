@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>mince</title>
+
+    <link
+      rel="shortcut icon"
+      href="public/icons/mince.webp"
+      type="image/webp"
+    />
+
+    <link rel="manifest" href="mince.webmanifest" />
+
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <header class="header">
+        <h1>mince</h1>
+        <p>update your minecraft mods easily</p>
+        <hr />
+      </header>
+      <main>
+        <div class="options">
+          <div class="minecraft-version">
+            <label for="versions-list" hidden
+              >select minecraft version(s)</label
+            >
+            <button type="button" class="expand-versions-list">
+              select minecraft version(s)
+            </button>
+            <select name="version" id="versions-list" multiple hidden>
+              <option value="loading" disabled>
+                loading minecraft versions...
+              </option>
+            </select>
+          </div>
+          <div class="mod-loader">
+            <label for="mod-loader-list" hidden>select mod loader(s)</label>
+            <button type="button" class="expand-mod-loader-list">
+              select mod loader(s)
+            </button>
+            <select name="mod-loader" id="mod-loader-list" multiple hidden>
+              <option value="loading" disabled></option>
+            </select>
+          </div>
+          <div class="picker">
+            <button type="button" class="pick-folder">
+              select mods folder
+            </button>
+            <span class="pick-info"></span>
+          </div>
+          <hr />
+        </div>
+        <div class="mod-list-container">
+          <h2>mods</h2>
+          <div class="mod-list">
+            <span class="mod-list-info"
+              >waiting for you to pick a folder...</span
+            >
+            <div class="mods" hidden></div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <hr />
+        <span>Made by tuhana with 😻</span>
+      </footer>
+    </div>
+    <script type="module" src="scripts/index.js"></script>
+  </body>
+</html>

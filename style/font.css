@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Space Grotesk", sans-serif;
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url(/public/fonts/SpaceGrotesk[wght].woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/public/fonts/SpaceMono-Regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/public/fonts/SpaceMono-Bold.woff2) format("woff2");
+}

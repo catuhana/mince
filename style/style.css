@@ -1,0 +1,150 @@
+@import url(font.css);
+@import url(root.css);
+@import url(reset.css);
+
+div.main {
+  --side-padding: 1rem;
+
+  max-width: calc(768px - var(--side-padding) * 2);
+
+  margin: 0 auto;
+  padding: 0 var(--side-padding);
+}
+
+header.header {
+  h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+}
+
+div.mod-list-container {
+  h2 {
+    font-size: 1.75rem;
+    font-weight: bold;
+  }
+}
+
+div.mods {
+  outline: 1px white solid;
+
+  div.mod-item {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 0.5rem;
+
+    div.mod-item-header {
+      h3.mod-item-file-name {
+        font-weight: 500;
+      }
+
+      code.mod-item-file-hash {
+        font-size: 0.75rem;
+        word-break: break-all;
+
+        color: #9e9e9e;
+      }
+    }
+
+    div.mod-item-info {
+      h4.mod-item-name {
+        font-weight: 500;
+      }
+
+      div.mod-item-versions {
+        display: flex;
+        flex-direction: column;
+
+        span.mod-item-current-version::before {
+          content: "current version: ";
+        }
+
+        span.mod-item-available-version::before {
+          content: "available version: ";
+        }
+      }
+    }
+  }
+}
+
+button {
+  background-color: #1e1e1e;
+  color: #ffffff;
+
+  padding: 0.5rem 1rem;
+
+  cursor: pointer;
+}
+
+select#versions-list,
+select#mod-loader-list {
+  position: absolute;
+  top: 100%;
+
+  font-family: var(--mono-font-family, ui-monospace);
+
+  background-color: #1e1e1e;
+  color: #ffffff;
+
+  height: 8rem;
+
+  z-index: 10;
+
+  @supports (scrollbar-width: thin) {
+    scrollbar-width: thin;
+  }
+
+  option {
+    padding: 0.5rem 1rem;
+  }
+}
+
+label[for="versions-list"] {
+  display: inline-block;
+
+  background-color: #1e1e1e;
+  color: #ffffff;
+
+  padding: 0.5rem 1rem;
+
+  cursor: pointer;
+
+  &::after {
+    content: " ⯆";
+  }
+}
+
+div.minecraft-version,
+div.mod-loader {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  place-self: flex-start;
+}
+
+button.expand-versions-list,
+button.expand-mod-loader-list,
+button.pick-folder {
+  text-align: left;
+}
+
+hr {
+  margin: 0.5rem 0;
+
+  &.mod-item-spacing {
+    margin: 0.5rem 0.5rem;
+
+    &:last-child {
+      display: none;
+    }
+  }
+}
+
+footer {
+  margin-bottom: 0.5rem;
+}

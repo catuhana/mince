@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+:root {
+  --font-family: "Space Grotesk", sans-serif;
+  --mono-font-family: "Space Mono", monospace;
+
+  color-scheme: dark light;
+
+  font-weight: 300;
+}

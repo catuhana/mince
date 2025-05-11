@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+  "name": "mince",
+  "description": "update your Minecraft mods easily",
+  "icons": [
+    {
+      "src": "public/icons/mince.webp",
+      "sizes": "512x512",
+      "type": "image/webp"
+    }
+  ],
+  "id": "/",
+  "short_name": "mince",
+  "display": "standalone",
+  "display_override": ["fullscreen", "standalone", "minimal-ui"],
+  "orientation": "natural",
+  "start_url": "/",
+  "theme_color": "#1e1e1e",
+  "background_color": "#121212"
+}
